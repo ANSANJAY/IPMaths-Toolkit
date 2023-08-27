@@ -25,13 +25,13 @@ This  is all about diving deep into the world of IP addresses. Before we move on
 ## 🎯 Relevance
 
 - This  will help you harness the power of bitwise manipulation, especially when it comes to networking.
-- For those eyeing system programming jobs, mastering bitwise operations in C is non-negotiable. Interviews will likely touch on this area, so be prepared!
 
 ## 📋 Prerequisites
 
 1. Mastery over IP address mathematics from this module.
-2. Bitwise operations (AND, OR) and shifts (left, right) in C shouldn't be new to you.
+2. Bitwise operations (AND, OR) and shifts (left, right) in C.
 3. Ensure you have a GCC compiler. And it's recommended to run this on Linux. 
+
 # IP Address Calculator :mag_right::bulb:
 
 ## 1. Computing the integer representation of a subnet mask :performing_arts:
