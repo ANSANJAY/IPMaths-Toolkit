@@ -84,8 +84,8 @@ Check if a given IP address lies within a certain subnet.
 ## 🔗 Resources
 
 Two handy links will guide you:
-1. [Link 1](https://www.silisoftware.com/tools/ipconverter.php): Useful for IP address format conversions.
-2. [Link 2](http://jodies.de/ipcalc): For double-checking network IDs, broadcast addresses, and the cardinality of subnets.
+1. [Useful for IP address format conversions](https://www.silisoftware.com/tools/ipconverter.php) 
+2. [For double-checking network IDs, broadcast addresses, and the cardinality of subnets](http://jodies.de/ipcalc)
 
 ## 🛠 Compilation & Testing
 
