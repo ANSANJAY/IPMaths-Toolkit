@@ -104,5 +104,60 @@ Two handy links will guide you:
 
 It's wise to stick to a Linux environment.
 
+## How to Compile
+
+To compile the program, navigate to the directory where the source code is stored and run the following command in the terminal:
+
+```bash
+gcc -o translation -lm translation.c
+```
+
+
+## How to Execute 
+
+```bash
+./translation
+```
+
+## Sample Output 
+
+![](./Screenshot%20from%202023-08-28%2019-54-39.png)
+
+## Sample Output Explained
+
+Below is an explanation of each test scenario based on the sample output provided:
+
+### Test Scenarios
+
+#### Testing Q1 (get_broadcast_address)
+- **Input**: IP Address: `192.168.2.10`, Subnet Mask: `/24`
+- **Output**: Broadcast Address: `192.168.2.255`
+- **Explanation**: The broadcast address for the given subnet (`192.168.2.0/24`) is `192.168.2.255`, which matches the output. This indicates the function is working as expected.
+
+#### Testing Q2 (get_ip_integer_equivalent)
+- **Input**: IP Address: `192.168.2.10`
+- **Output**: Integer Equivalent: `3232236042`
+- **Explanation**: The integer equivalent of the IP address `192.168.2.10` is `3232236042`, which matches the output. The function appears to work correctly.
+
+#### Testing Q3 (get_abcd_ip_format)
+- **Input**: Integer: `2058138165`
+- **Output**: IP Address in A.B.C.D Format: `122.172.178.53`
+- **Explanation**: The IP address corresponding to the integer `2058138165` is `122.172.178.53`, which is correct based on the output.
+
+#### Testing Q4 (get_network_id)
+- **Input**: IP Address: `192.168.2.10`, Subnet Mask: `/20`
+- **Output**: Network ID: `10.2.160.0/20`
+- **Explanation**: The output for the network ID appears to be incorrect.(to do -- debug) Based on the input, it should have been `192.168.0.0/20`.
+
+#### Testing Q5 (get_subnet_cardinality)
+- **Input**: Subnet Mask: `/24`
+- **Output**: Cardinality: `254`
+- **Explanation**: In a `/24` subnet, there are `256` total addresses. Subtracting `2` for the network and broadcast addresses leaves `254` usable addresses, which matches the output.
+
+#### Testing Q6 (check_ip_subnet_membership)
+- **Input**: Network ID: `192.168.1.0/24`, IP Address to Check: `192.168.1.10`
+- **Output**: Membership Result: "Membership false"
+- **Explanation**: This output appears to be incorrect.(to do -- debug) The IP address `192.168.1.10` should indeed belong to the `192.168.1.0/24` subnet.
+
 🍀 Best of luck  🚀
 

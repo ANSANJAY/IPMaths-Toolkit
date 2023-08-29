@@ -164,7 +164,7 @@ main(int argc, char **argv){
     char ip_address[PREFIX_LEN + 1];
     strncpy(ip_address, "192.168.1.10",  strlen("192.168.1.10"));
 
-    int res = check_ip_subnet_membser_ship(network_id, mask, ip_address);
+    int res = check_ip_subnet_membership(network_id, mask, ip_address);
     printf("IP Subnet check Result = %s\n", res == 0 ? "Membership true": "Membership false");
     printf("Testing Q6 Done.\n");
 }
